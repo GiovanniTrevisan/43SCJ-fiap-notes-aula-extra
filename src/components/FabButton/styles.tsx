@@ -5,7 +5,7 @@ interface PropsFab {
 }
 
 export const FabButtonStyled = styled.button<PropsFab>`
-  position: absolute;
+  position: fixed;
   ${(props) => (props.position === "left" ? "left: 30px;" : "right: 30px;")}
   bottom: 30px;
   color: white;
