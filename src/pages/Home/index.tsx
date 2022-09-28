@@ -163,9 +163,9 @@ function Home() {
 
         <FilterInput handleTextType={filterNotes} placeholder="Buscar notas" />
         <select value={selectedOrder} onChange={setSortType} className="select-order">
-          <option selected value="DEFAULT">Ordenar</option>
-          <option value="A-Z">A-Z</option>
-          <option value="Z-A">Z-A</option>
+          <option selected value="DEFAULT">Ordenar Notas</option>
+          <option value="A-Z">A-Z (Asc)</option>
+          <option value="Z-A">Z-A (Desc)</option>
           <option value="urgente">Urgência</option>
         </select>
         <FabButton position="left" handleClick={() => {

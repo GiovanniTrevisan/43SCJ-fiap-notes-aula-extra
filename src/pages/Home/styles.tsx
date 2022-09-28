@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   height: fit-content;
-  padding: 60px 30px 30px;
+  padding: 60px 22px;
   flex: 1;
 
   @media (max-width: 425px){
@@ -15,25 +15,24 @@ export const Container = styled.section`
   align-items: flex-start;
   .select-order{
     position: absolute;
-    top: 2px;
+    top: 5px;
     font-size: 16px;
-    font-weight: bold;
     height: 35px;
-    border-radius: 10px;
+    border-radius: 5px;
     background: transparent;
     color: #ffffff;
-    border: 1px solid #ed145b;
-    right: 50px;
-    padding: 0px 30px;
+    border: 1px solid #ddd;
+    left: 10px;
+    padding: 0px 20px;
+    min-width: 190px;
     cursor: pointer;
 
-    border-radius: 13px;
     box-shadow:  4px 4px 8px #b60f46, -4px -4px 8px #ff1970;
 
     @media (max-width: 425px){
       position: absolute;
-      right: 40px;
-      left: 40px;
+      right: 10px;
+      left: 10px;
       top: 50px;
       height: 40px;
   }

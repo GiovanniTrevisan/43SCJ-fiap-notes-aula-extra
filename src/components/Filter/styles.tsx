@@ -4,12 +4,12 @@ export const FilterStyled = styled.input`
   color: var(--primary);
   background-color: var(--bgPrimary);
   flex-grow: 1;
-  margin-right: 50px;
-  
   position: absolute;
   top: 5px;
-  left: 40px;
-  width: calc(100% - 250px);
+  right: 10px;
+  width: calc(100% - 220px);
+
+  height: 35px;
 
   border-radius: 5px;
   background: var(--gray);
@@ -19,7 +19,7 @@ export const FilterStyled = styled.input`
   transition: 0.3s;
 
   @media (max-width: 425px){
-    width: calc(100% - 80px);
+    width: calc(100% - 20px);
   }
 
   :hover{

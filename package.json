@@ -1,12 +1,13 @@
 {
   "name": "fiap-notes",
-  "version": "0.0.0",
-  "homepage": "https://giovannitrevisan.github.io/43SCJ-fiap-notes-aula-extra/",
+  "version": "0.1.0",
+  "homepage": "https://giovannitrevisan.github.io/43SCJ-fiap-notes-aula-extra",
+  "private": true,
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
