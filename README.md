@@ -63,8 +63,8 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
     <td align="center">
-      <a href="linkedin.com/in/evandro-borzi-912a24168">
-        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGVyRfx0bI-Qw/profile-displayphoto-shrink_800_800/0/1557910206902?e=1669852800&v=beta&t=lPhMOhkXI6V6CNLa-1d5WQhakHGrbVZAiW9Rn4iD0P0" width="100px;" alt="Foto do Evandro Borzi"/><br>
+      <a href="https://github.com/EvandroBorziMarques">
+        <img src="https://avatars.githubusercontent.com/u/29926131?v=4" width="100px;" alt="Foto do Evandro Borzi"/><br>
         <sub>
           <b>Evandro Borzi</b>
         </sub>
