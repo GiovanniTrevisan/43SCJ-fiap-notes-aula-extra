@@ -43,7 +43,7 @@ export const Container = styled.article`
   }
 
   .material-icons:not(#priority):hover  {
-    color: #1875ff;
+    color: #505050;
     transform: scale(1.2);
     cursor: pointer;
   }
