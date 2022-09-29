@@ -15,6 +15,8 @@ export const Container = styled.article`
   padding: 30px;
   position: relative;
 
+  border: 1px solid var(--primary);
+
   color: var(--white);
 
   border-radius: 15px;
