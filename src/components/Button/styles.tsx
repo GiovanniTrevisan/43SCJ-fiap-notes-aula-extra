@@ -5,7 +5,6 @@ export const ButtonStyled = styled.button`
   min-width: 100px;
 
   background-color: transparent;
-  cursor: pointer;
   transition: 0.2s;
   border: 1px solid var(--white);
   border-radius: 5px;

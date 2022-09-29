@@ -38,16 +38,14 @@ export const Container = styled.article`
     position: absolute;
     bottom: 5px;
     right: 5px;
-
     font-size: 32px;
-    cursor: pointer;
     transition: 0.3s;
   }
 
   .material-icons:not(#priority):hover  {
-    color: #333;
-    transform: scale(1.1);
-    transform: rotate(360deg);
+    color: #1875ff;
+    transform: scale(1.2);
+    cursor: pointer;
   }
 
   #priority {
@@ -55,6 +53,7 @@ export const Container = styled.article`
     bottom: 5px;
     left: 5px;
     width: fit-content;
+    cursor: default;
   }
 
   .material-icons.icon-edit{

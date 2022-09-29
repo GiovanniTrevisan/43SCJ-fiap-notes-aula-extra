@@ -23,7 +23,7 @@ function CardNote({ note, handleEdit, handleDelete }: NoteProps) {
           edit
         </span>
         <span className="material-icons" onClick={() => handleDelete(note.id)}>
-          delete_forever
+          delete
         </span>
       </Container>
     </>
