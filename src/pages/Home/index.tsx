@@ -66,7 +66,7 @@ function Home() {
                 urgent: values.urgent,
               } : note;
           }));
-        actions.setSubmitting(false);
+
         setShowModal(false);
 
       })();
@@ -162,8 +162,8 @@ function Home() {
         }
 
         <FilterInput handleTextType={filterNotes} placeholder="Buscar notas" />
-        <select value={selectedOrder} onChange={setSortType} className="select-order">
-          <option selected value="DEFAULT">Ordenar Notas</option>
+        
+        <select defaultValue={'A-Z'} onChange={setSortType} className="select-order">
           <option value="A-Z">A-Z (Asc)</option>
           <option value="Z-A">Z-A (Desc)</option>
           <option value="urgente">Urgência</option>
