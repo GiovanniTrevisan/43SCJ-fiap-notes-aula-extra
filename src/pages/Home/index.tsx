@@ -84,6 +84,27 @@ function Home() {
     if (!authenticated) navigate("/");
   }, [authenticated]);
 
+  const setSortType = (event: any) => {
+    setSelectedOrder(event.target.value);
+    const order = event.target.value;
+    const callbackSetNotes = (prevState: Note[]) => {
+      switch (order) {
+        case 'A-Z':
+          prevState = prevState.sort((a, b) => a.text < b.text ? -1 : a.text > b.text ? 1 : 0);
+          break;
+        case 'Z-A':
+          prevState = prevState.sort((a, b) => a.text < b.text ? 1 : a.text > b.text ? -1 : 0);
+          break;
+        case 'urgente':
+          prevState = prevState.sort((a, b) => !a.urgent ? 1 : a.urgent ? -1 : 0);
+          break;
+        default:
+          prevState = prevState.map((note) => note);
+      }
+      return prevState;
+    };
+    setNotes(callbackSetNotes);
+  };
 
   const filterNotes = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -97,31 +118,6 @@ function Home() {
     [notes]
   );
 
-  const setSortType = (event: any) => {
-    setSelectedOrder(event.target.value);
-    const order = event.target.value;
-    const callbackSetNotes = (prevState: Note[]) => {
-      if (order == 'A-Z') {
-        prevState.sort((noteA, noteB) => {
-          return noteA.text < noteB.text ? -1 : noteA.text > noteB.text ? 1 : 0;
-        });
-      } else if (order == 'Z-A') {
-        prevState.sort((noteA, noteB) => {
-          return noteA.text < noteB.text ? 1 : noteA.text > noteB.text ? -1 : 0;
-        });
-      } 
-      else if (order == 'urgente') {
-        prevState.sort((noteA, noteB) => {
-          return !noteA.urgent ? 1 : noteA.urgent ? -1 : 0;
-        });
-      } else {
-        prevState = prevState.map((note) => note);
-      }
-      prevState = prevState.map((note) => note);
-      return prevState;
-    };
-    setNotes(callbackSetNotes);
-  };
 
   return (
     <>
@@ -162,7 +158,7 @@ function Home() {
         }
 
         <FilterInput handleTextType={filterNotes} placeholder="Buscar notas" />
-        
+
         <select defaultValue={'A-Z'} onChange={setSortType} className="select-order">
           <option value="A-Z">A-Z (Asc)</option>
           <option value="Z-A">Z-A (Desc)</option>
